@@ -1,0 +1,251 @@
+---SPLIT---
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --primary: #516cf7;
+  --primary-light: #f7f9fc;
+---SPLIT---
+  --accent: #9251f7;
+  --gray: #79819a;
+  --gray-light: #e2e6ee;
+  --gray-bg: #f5f5f5;
+  --black: #2e2e48;
+  --white: #fff;
+  --border-radius: 12px;
+  --font-main: "Outfit", sans-serif;
+  --font-alt: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+---SPLIT---
+  font-family: var(--font-main);
+  background: var(--gray-bg);
+  color: var(--black);
+---SPLIT---
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--gray-bg);
+}
+
+// Card utility for sidebar sections
+.card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+---SPLIT---
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.06);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  width: 90%;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.personalInfo {
+---SPLIT---
+  width: 340px;
+  min-height: 100vh;
+  background: #f7f6fb;
+  border-right: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 0;
+  position: relative;
+}
+
+.personalInfo_profilePic {
+  width: 100%;
+  height: 220px;
+  background-image: url("/assets/user-profile.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.personalInfo_details {
+  @extend .card;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+  width: 90%;
+---SPLIT---
+  // Remove background, border, and padding from original
+  background: none;
+  border: none;
+  padding: 0;
+}
+---SPLIT---
+
+.personalInfo_details_profession_name {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-main);
+}
+
+.personalInfo_details_profession_position {
+  font-size: 1.75rem;
+  font-weight: 300;
+  background: linear-gradient(90deg, #a478e8 0%, #516cf7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-main);
+}
+
+.personalInfo_details_quote {
+  font-size: 1.05rem;
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-alt);
+  border-left: 3px solid var(--primary);
+  padding-left: 1rem;
+}
+
+.personalInfo_details_quote_author {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-style: normal;
+  margin-top: 0.25rem;
+  font-family: var(--font-alt);
+}
+
+.personalInfo_contact {
+  @extend .card;
+  gap: 1.1rem;
+  width: 90%;
+  // Remove background, border, and padding from original
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.personalInfo_contact_emailCard,
+.personalInfo_contact_websiteCard,
+.personalInfo_contact_phoneCard,
+.personalInfo_contact_addressCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.personalInfo_contact_emailCard_motif,
+.personalInfo_contact_websiteCard_motif,
+.personalInfo_contact_phoneCard_motif,
+.personalInfo_contact_addressCard_motif {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ececf0; // monotone gray
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: #6e6e7e; // monotone icon color
+}
+
+.personalInfo_contact_emailCard_text_label,
+.personalInfo_contact_websiteCard_text_label,
+.personalInfo_contact_phoneCard_text_label,
+.personalInfo_contact_addressCard_text_label {
+  font-size: 0.97rem;
+  color: #8a8a9e; // slightly dim color for headline
+  font-family: var(--font-alt);
+  font-weight: 500;
+  margin-bottom: 4px; // 4px gap below headline
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.personalInfo_contact_emailCard_text_value,
+.personalInfo_contact_websiteCard_text_value,
+.personalInfo_contact_phoneCard_text_value,
+.personalInfo_contact_addressCard_text_value {
+  font-size: 1rem;
+  color: #22223b;
+  font-family: var(--font-alt);
+  font-weight: 500;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.personalInfo_socials {
+  @extend .card;
+  gap: 0.7rem;
+  width: 90%;
+  // Remove background, border, and padding from original
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.personalInfo_socials_title {
+  font-size: 1rem;
+  color: var(--gray);
+---SPLIT---
+  font-family: var(--font-alt);
+  margin-bottom: 0.5rem;
+}
+
+.personalInfo_socials_infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem; // change from 1.2rem to 0.7rem to match languages
+}
+
+.personalInfo_socials_infoSection_instagramCard,
+.personalInfo_socials_infoSection_dribbleCard,
+.personalInfo_socials_infoSection_twitterCard,
+.personalInfo_socials_infoSection_linkedInCard {
+---SPLIT---
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0; // add same vertical padding as languages
+  // remove margin-bottom if present
+  margin-bottom: 0;
+---SPLIT---
+}
+
+.personalInfo_socials_infoSection_instagramCard_motif,
+.personalInfo_socials_infoSection_dribbleCard_motif,
+.personalInfo_socials_infoSection_twitterCard_motif,
+.personalInfo_socials_infoSection_linkedInCard_motif {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.personalInfo_socials_infoSection_instagramCard_motif img,
+.personalInfo_socials_infoSection_dribbleCard_motif img,
+.personalInfo_socials_infoSection_twitterCard_motif img,
+.personalInfo_socials_infoSection_linkedInCard_motif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
