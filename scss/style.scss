@@ -249,3 +249,22 @@ main {
   object-fit: cover;
   border-radius: 50%;
   display: block;
+---SPLIT---
+}
+
+.personalInfo_socials_infoSection_instagramCard_text,
+.personalInfo_socials_infoSection_dribbleCard_text,
+.personalInfo_socials_infoSection_twitterCard_text,
+.personalInfo_socials_infoSection_linkedInCard_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.personalInfo_socials_infoSection_instagramCard_text_label,
+.personalInfo_socials_infoSection_dribbleCard_text_label,
+.personalInfo_socials_infoSection_twitterCard_text_label,
+.personalInfo_socials_infoSection_linkedInCard_text_label {
+  font-size: 1rem;
