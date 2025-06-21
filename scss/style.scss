@@ -268,3 +268,62 @@ main {
 .personalInfo_socials_infoSection_twitterCard_text_label,
 .personalInfo_socials_infoSection_linkedInCard_text_label {
   font-size: 1rem;
+---SPLIT---
+  color: var(--gray);
+  font-family: var(--font-alt);
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.personalInfo_socials_infoSection_instagramCard_text_value,
+.personalInfo_socials_infoSection_dribbleCard_text_value,
+.personalInfo_socials_infoSection_twitterCard_text_value,
+.personalInfo_socials_infoSection_linkedInCard_text_value {
+  font-size: 1.1rem;
+  color: var(--black);
+  font-family: var(--font-alt);
+  font-weight: 500;
+}
+
+.personalInfo_languages {
+  @extend .card;
+  gap: 0.7rem;
+  width: 90%;
+  // Remove background, border, and padding from original
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.personalInfo_languages_title {
+  font-size: 1rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  margin-bottom: 0.5rem;
+}
+
+.personalInfo_languages_infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.personalInfo_languages_infoSection_italianCard,
+.personalInfo_languages_infoSection_greekCard,
+.personalInfo_languages_infoSection_englishCard,
+.personalInfo_languages_infoSection_spanishCard {
+  display: flex;
+  align-items: center; // center image vertically with text
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.personalInfo_languages_infoSection_italianCard_motif,
+.personalInfo_languages_infoSection_greekCard_motif,
+.personalInfo_languages_infoSection_englishCard_motif,
+.personalInfo_languages_infoSection_spanishCard_motif {
+  width: 32px;
+  height: 22px;
+  border-radius: 4px;
+  background: none;
+  background-size: contain;
