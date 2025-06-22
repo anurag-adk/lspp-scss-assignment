@@ -507,3 +507,112 @@ main {
   background-image: url("../assets/logo/chakra-ui.png");
 }
 
+---SPLIT---
+.projectInfo_latestProject_figmaCard_logoTitle_desc,
+.projectInfo_latestProject_chakraCard_logoTitle_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc_title,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-alt);
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc_context,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_context {
+  font-size: 1rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  margin-bottom: 0.2rem;
+}
+
+.projectInfo_latestProject_figmaCard_link,
+.projectInfo_latestProject_chakraCard_link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #516cf7;
+  font-family: var(--font-alt);
+  font-weight: 700;
+  margin-top: 0.5rem;
+  width: 100%;
+  word-break: break-word;
+}
+
+.projectInfo_latestProject_figmaCard_link::before,
+.projectInfo_latestProject_chakraCard_link::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/icon/link.svg");
+  background-size: 20px 20px;
+  border-radius: 50%;
+  background-color: #e7eafd;
+  margin-right: 0.3rem;
+}
+.projectInfo_latestProject_figmaCard_link::before {
+  background-image: url("../assets/icon/figma-outline.svg");
+}
+.projectInfo_latestProject_chakraCard_link::before {
+  background-image: url("../assets/icon/link.svg");
+}
+
+@media (max-width: 900px) {
+  .projectInfo_latestProjects-list {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .projectInfo_latestProject_figmaCard,
+  .projectInfo_latestProject_chakraCard {
+    flex: unset;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+}
+
+/* Experience Timeline */
+.projectInfo_experience {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.projectInfo_experience_title {
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo_experience_title_text,
+.projectInfo_section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-main);
+  margin-bottom: 0.7rem;
+}
+
+.projectInfo_experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-left: 0;
+}
+
+.projectInfo_experience_appleCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; // align to top
+  // background: #f7f8fa;
