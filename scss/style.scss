@@ -747,3 +747,39 @@ main {
   margin-left: 2.5rem; // add space so all contexts start at same point
   // line-height: 1.6;
   // max-width: 420px;
+---SPLIT---
+}
+
+@media (max-width: 900px) {
+  .projectInfo_experience-list {
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .projectInfo_experience_appleCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    gap: 0.7rem;
+    min-width: 0;
+    width: 100%;
+  }
+  .projectInfo_experience_appleCard_left {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 0.7rem;
+  }
+  .projectInfo_experience_appleCard_dateLocation {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0;
+  }
+  .projectInfo_experience_appleCard_logoDesc {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0.7rem;
+  }
+  .projectInfo_experience_appleCard_context {
+    max-width: 100%;
