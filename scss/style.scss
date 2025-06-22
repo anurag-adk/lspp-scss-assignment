@@ -871,3 +871,115 @@ main {
 }
 
 .projectInfo_skills-row {
+---SPLIT---
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.projectInfo_skills-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: var(--font-main);
+  margin-top: 0.2rem;
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectInfo_skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.projectInfo_skills-tag {
+  background: #f3e8ff;
+  color: var(--accent);
+  font-size: 1rem;
+  font-family: var(--font-alt);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+}
+
+.projectInfo_skills-tag.dev {
+  background: #f1f4ff;
+  color: var(--primary);
+}
+
+/* Tools */
+.projectInfo_tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-left: 48px;
+}
+
+.projectInfo_tools-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 180px;
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // ensure text aligns left and wraps
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+}
+
+.projectInfo_tools-card-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo_tools-card-logo.figma {
+  background-image: url("../assets/logo/figma.png");
+}
+.projectInfo_tools-card-logo.maze {
+  background-image: url("../assets/logo/maze.png");
+}
+.projectInfo_tools-card-logo.spline {
+  background-image: url("../assets/logo/spline.png");
+}
+.projectInfo_tools-card-logo.zeplin {
+  background-image: url("../assets/logo/zeplin.png");
+}
+.projectInfo_tools-card-logo.vectornator {
+  background-image: url("../assets/logo/vectornator.png");
+}
+.projectInfo_tools-card-logo.rotato {
+  background-image: url("../assets/logo/rotato.png");
+}
+.projectInfo_tools-card-logo.vscode {
+  background-image: url("../assets/logo/vs-code.png");
+}
+.projectInfo_tools-card-logo.xcode {
+  background-image: url("../assets/logo/x-code.png");
+}
+.projectInfo_tools-card-logo.notion {
+  background-image: url("../assets/logo/notion.png");
+}
+
+.projectInfo_tools-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  font-family: var(--font-alt);
+  width: 100%; // allow text to use full width
+  word-break: break-word;
+}
+
+.projectInfo_tools-card-desc {
+  font-size: 0.95rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  text-align: center;
