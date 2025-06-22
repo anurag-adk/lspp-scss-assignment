@@ -650,3 +650,72 @@ main {
   align-items: flex-start;
   gap: 0.1rem;
   font-size: 0.92rem;
+---SPLIT---
+  color: #a0a4b8;
+  font-family: var(--font-alt);
+  margin-top: 0.1rem;
+}
+
+.projectInfo_experience_appleCard_dateLocation_duration {
+  color: #a0a4b8;
+  font-family: var(--font-alt);
+  font-weight: 300;
+}
+
+.projectInfo_experience_appleCard_dateLocation_location {
+  color: #a0a4b8;
+  font-family: var(--font-alt);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.projectInfo_experience_appleCard_dateLocation i {
+  font-size: 0.82rem;
+  color: #a0a4b8 !important;
+  margin-right: 0.5rem !important;
+}
+
+.projectInfo_experience_appleCard_logoDesc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0; // allow shrinking
+  margin-top: 0.1rem;
+}
+
+.projectInfo_experience_appleCard_logoDesc_mainLogo,
+.projectInfo_experience_teslaCard_logoDesc_mainLogo,
+.projectInfo_experience_googleCard_logoDesc_mainLogo,
+.projectInfo_experience_vectornatorCard_logoDesc_mainLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.projectInfo_experience_appleCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/apple.png");
+}
+.projectInfo_experience_teslaCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/tesla.png");
+}
+.projectInfo_experience_googleCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/google.png");
+}
+.projectInfo_experience_vectornatorCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/vectornator.png");
+}
+
+.projectInfo_experience_appleCard_logoDesc_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0; // allow text to shrink
+  width: 100%; // allow text to use available space
