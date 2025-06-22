@@ -616,3 +616,13 @@ main {
   flex-direction: row;
   align-items: flex-start; // align to top
   // background: #f7f8fa;
+---SPLIT---
+  // border-radius: 16px;
+  // border: 1.5px solid #e2e6ee;
+  // box-shadow: none;
+  padding: 1.1rem 1.2rem 1.1rem 1.2rem;
+  gap: 1.2rem;
+  margin-bottom: 0;
+  word-break: break-word;
+  transition: box-shadow 0.2s, border 0.2s;
+}
