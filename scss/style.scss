@@ -783,3 +783,38 @@ main {
   }
   .projectInfo_experience_appleCard_context {
     max-width: 100%;
+---SPLIT---
+    margin-top: 0.2rem;
+    margin-left: 0;
+  }
+}
+
+/* Education */
+.projectInfo_education-list {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 48px;
+}
+
+.projectInfo_education-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 220px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; // ensure text aligns left and wraps
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+}
+
+.projectInfo_education-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.projectInfo_education-card-logo {
+  width: 32px;
+  height: 32px;
