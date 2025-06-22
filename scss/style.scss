@@ -827,3 +827,47 @@ main {
 }
 
 .projectInfo_education-card-logo.memorisely {
+---SPLIT---
+  background-image: url("../assets/logo/memorisely.png");
+}
+.projectInfo_education-card-logo.uxacademy {
+  background-image: url("../assets/logo/ux-academy.png");
+}
+.projectInfo_education-card-logo.coursera {
+  background-image: url("../assets/logo/coursera.png");
+}
+
+.projectInfo_education-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  font-family: var(--font-alt);
+  width: 100%; // allow text to use full width
+  word-break: break-word;
+}
+
+.projectInfo_education-card-course {
+  font-size: 1rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  width: 100%; // allow text to use full width
+  word-break: break-word;
+}
+
+.projectInfo_education-card-date {
+  font-size: 0.95rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  width: 100%; // allow text to use full width
+  word-break: break-word;
+}
+
+/* Skills */
+.projectInfo_skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 48px;
+}
+
+.projectInfo_skills-row {
