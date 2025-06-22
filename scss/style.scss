@@ -639,3 +639,14 @@ main {
 ---SPLIT---
   margin-bottom: 0;
   word-break: break-word;
+---SPLIT---
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.projectInfo_experience_appleCard_dateLocation {
+  min-width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.1rem;
+  font-size: 0.92rem;
