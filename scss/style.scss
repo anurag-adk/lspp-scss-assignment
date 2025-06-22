@@ -719,3 +719,31 @@ main {
   gap: 0.1rem;
   min-width: 0; // allow text to shrink
   width: 100%; // allow text to use available space
+---SPLIT---
+  white-space: nowrap; // prevent wrapping
+}
+
+.projectInfo_experience_appleCard_logoDesc_desc_title {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #79819a; // gray for product designer
+  font-family: var(--font-main);
+}
+
+.projectInfo_experience_appleCard_logoDesc_desc_context {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-main);
+}
+
+.projectInfo_experience_appleCard_context {
+  font-size: 0.98rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  text-align: left;
+  margin-top: 0.2rem;
+  flex: 1;
+  margin-left: 2.5rem; // add space so all contexts start at same point
+  // line-height: 1.6;
+  // max-width: 420px;
