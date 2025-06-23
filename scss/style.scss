@@ -83,6 +83,29 @@ main {
   padding: 0;
 }
 
+.personalInfo_details_profession {
+  overflow-y: auto;
+}
+.personalInfo_details_profession_name {
+  overflow-y: auto;
+}
+.personalInfo_details_profession_position {
+  overflow-y: auto;
+}
+.personalInfo_details_quote {
+  overflow-y: auto;
+}
+.personalInfo_details_quote_text {
+  overflow-y: auto;
+}
+.personalInfo_details_quote_author {
+  overflow-y: auto;
+}
+.personalInfo_contact {
+  overflow-y: auto;
+  padding: 10px;
+}
+
 .personalInfo_details_profession_name {
   font-size: 2.25rem;
   font-weight: 500;
@@ -361,7 +384,7 @@ main {
 .personalInfo_languages_infoSection_englishCard_text_value,
 .personalInfo_languages_infoSection_spanishCard_text_value {
   font-size: 0.95rem;
-  color: var(--gray);
+  color: #79819a;
   font-family: var(--font-alt);
   font-weight: 400;
 }
@@ -772,7 +795,7 @@ main {
   max-width: 100%;
   overflow-x: auto;
   box-sizing: border-box;
-  padding: 1.2rem;
+  // padding: 1.2rem;
 }
 
 @media (max-width: 1200px) {
@@ -920,26 +943,32 @@ main {
 }
 
 .projectInfo_tools-card {
-  background: var(--white);
+  background: #f7f9fc;
   border-radius: var(--border-radius);
-  padding: 1.2rem 1.2rem 1rem 1.2rem;
-  min-width: 180px;
-  flex: 1 1 180px;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  padding: 1rem 1rem 0.8rem 1rem;
+  min-width: 170px;
+  max-width: 220px;
+  flex: 1 1 170px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; // ensure text aligns left and wraps
-  gap: 0.5rem;
-  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+  word-break: break-word;
+  height: auto;
 }
 
 .projectInfo_tools-card-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 0.5rem;
+  background-color: #fff;
+  flex-shrink: 0;
+  margin-bottom: 0.4rem;
 }
 
 .projectInfo_tools-card-logo.figma {
@@ -951,14 +980,14 @@ main {
 .projectInfo_tools-card-logo.spline {
   background-image: url("../assets/logo/spline.png");
 }
-.projectInfo_tools-card-logo.zeplin {
-  background-image: url("../assets/logo/zeplin.png");
-}
 .projectInfo_tools-card-logo.vectornator {
   background-image: url("../assets/logo/vectornator.png");
 }
 .projectInfo_tools-card-logo.rotato {
   background-image: url("../assets/logo/rotato.png");
+}
+.projectInfo_tools-card-logo.zeplin {
+  background-image: url("../assets/logo/zeplin.png");
 }
 .projectInfo_tools-card-logo.vscode {
   background-image: url("../assets/logo/vs-code.png");
@@ -973,19 +1002,36 @@ main {
 .projectInfo_tools-card-title {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--black);
+  color: #2e2e48;
   font-family: var(--font-alt);
-  width: 100%; // allow text to use full width
+  width: 100%;
   word-break: break-word;
+  margin-bottom: 0.1rem;
+  text-align: center;
 }
 
 .projectInfo_tools-card-desc {
-  font-size: 0.95rem;
-  color: var(--gray);
+  font-size: 0.75rem;
+  color: #79819a;
   font-family: var(--font-alt);
-  text-align: center;
-  width: 100%; // allow text to use full width
+  width: 100%;
   word-break: break-word;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .projectInfo_tools-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0.4rem 0;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
+  }
+  .projectInfo_tools-card-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Responsive adjustments */
@@ -1119,7 +1165,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 1rem;
+  // padding: 1rem;
   margin-top: 2rem;
 }
 
@@ -1216,239 +1262,99 @@ main {
   width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem;
+  align-items: flex-start;
+  // padding: 1rem;
   margin-top: 2rem;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
 }
 
 .projectInfo_tools_card {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card {
-    width: 80%;
-  }
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .projectInfo_tools_card_figma {
-  width: 45%;
-  height: 22vh;
-  border-radius: 0.25rem;
-  background-color: #f7f9fc;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  background: #f7f9fc;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  padding: 1rem 1rem 0.8rem 1rem;
+  min-width: 170px;
+  max-width: 220px;
+  flex: 1 1 170px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma {
-    width: 26%;
-    height: 28vh;
-  }
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin: 0.5rem;
+  word-break: break-word;
+  height: auto;
 }
 
-.projectInfo_tools_card_figma_mainLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/figma.png");
+.projectInfo_tools_card_figma_mainLogo,
+.projectInfo_tools_card_figma_mazeLogo,
+.projectInfo_tools_card_figma_splineLogo,
+.projectInfo_tools_card_figma_vectornatorLogo,
+.projectInfo_tools_card_figma_rotatoLogo,
+.projectInfo_tools_card_figma_zeplinLogo,
+.projectInfo_tools_card_figma_vsCodeLogo,
+.projectInfo_tools_card_figma_xcodeLogo,
+.projectInfo_tools_card_figma_notionLogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 40%;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_mainLogo {
-    width: 30%;
-  }
+  background-color: #fff;
+  flex-shrink: 0;
+  margin-bottom: 0.4rem;
 }
 
 .projectInfo_tools_card_figma_title {
-  font-size: 14.14px;
+  font-size: 1rem;
+  font-weight: 700;
   color: #2e2e48;
-  font-weight: 500;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+  margin-bottom: 0.1rem;
+  text-align: left;
 }
 
 .projectInfo_tools_card_figma_desc {
-  font-size: 10.1px;
+  font-size: 0.95rem;
   color: #79819a;
-  font-weight: 400;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+  text-align: left;
 }
 
-.projectInfo_tools_card_figma_mazeLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/maze.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 55%;
-  height: 6vh;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_mazeLogo {
-    width: 42%;
-    height: 6.5vh;
+@media (max-width: 900px) {
+  .projectInfo_tools_card_figma {
+    flex: unset;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0.4rem 0;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
   }
-}
-
-.projectInfo_tools_card_figma_splineLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/spline.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 30%;
-  height: 6.5vh;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_splineLogo {
-    width: 32%;
-    height: 9.5vh;
+  .projectInfo_tools_card_figma_mainLogo,
+  .projectInfo_tools_card_figma_mazeLogo,
+  .projectInfo_tools_card_figma_splineLogo,
+  .projectInfo_tools_card_figma_vectornatorLogo,
+  .projectInfo_tools_card_figma_rotatoLogo,
+  .projectInfo_tools_card_figma_zeplinLogo,
+  .projectInfo_tools_card_figma_vsCodeLogo,
+  .projectInfo_tools_card_figma_xcodeLogo,
+  .projectInfo_tools_card_figma_notionLogo {
+    width: 40px;
+    height: 40px;
   }
-}
-
-.projectInfo_tools_card_figma_vectornatorLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/vectornator.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 40%;
-  border-radius: 0.5rem;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_vectornatorLogo {
-    width: 30%;
-  }
-}
-
-.projectInfo_tools_card_figma_rotatoLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/rotato.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 41%;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_rotatoLogo {
-    width: 31.9%;
-    height: 9.78vh;
-  }
-}
-
-.projectInfo_tools_card_figma_zeplinLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/zeplin.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 52%;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_zeplinLogo {
-    width: 38%;
-  }
-}
-
-.projectInfo_tools_card_figma_vsCodeLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/vs-code.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50%;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_vsCodeLogo {
-    width: 30%;
-  }
-}
-
-.projectInfo_tools_card_figma_xcodeLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/x-code.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50%;
-}
-@media (min-width: 1024px) {
-  .projectInfo_tools_card_figma_xcodeLogo {
-    width: 30%;
-  }
-}
-
-.projectInfo_tools_card_figma_notionLogo {
-  width: 28%;
-  height: 9vh;
-  background-image: url("../assets/logo/notion.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 34%;
-  height: 35%;
-}
-
-@media (min-width: 1024px) {
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-  }
-  .personalInfo {
-    width: 35%;
-    background-color: #f7f9fc;
-  }
-}
-.personalInfo_details_profession {
-  overflow-y: auto;
-}
-.personalInfo_details_profession_name {
-  overflow-y: auto;
-}
-.personalInfo_details_profession_position {
-  overflow-y: auto;
-}
-.personalInfo_details_quote {
-  overflow-y: auto;
-}
-.personalInfo_details_quote_text {
-  overflow-y: auto;
-}
-.personalInfo_details_quote_author {
-  overflow-y: auto;
-}
-.personalInfo_contact {
-  overflow-y: auto;
-  padding: 10px;
 }
 
 /* Fix for custom cards in the HTML (e.g., .projectInfo_latestProject_figmaCard, etc.) */
