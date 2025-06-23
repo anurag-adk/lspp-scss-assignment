@@ -419,23 +419,6 @@ main {
   }
 }
 
-/* Timeline vertical line and dots */
-.projectInfo::before {
-  content: "";
-  position: absolute;
-  left: 24px;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background: var(--gray-light);
-  z-index: 0;
-}
-.projectInfo > section,
-.projectInfo > div {
-  position: relative;
-  z-index: 1;
-}
-
 /* Section titles */
 .projectInfo_section-title {
   font-size: 1.5rem;
@@ -452,7 +435,7 @@ main {
   background: none;
   box-shadow: none;
   padding: 0;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -634,7 +617,7 @@ main {
   content: "";
   position: absolute;
   left: -24px;
-  top: 0;
+  top: 24px;
   width: 8px;
   height: 8px;
   background: var(--black);
@@ -1201,7 +1184,7 @@ main {
   justify-content: space-evenly;
   align-items: flex-start;
   // padding: 1rem;
-  margin-top: 2rem;
+  // margin-top: 2rem;
 }
 
 .projectInfo_skills_title_text {
@@ -1300,7 +1283,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   // padding: 1rem;
-  margin-top: 2rem;
+  // margin-top: 2rem;
 }
 
 .projectInfo_tools_card {
@@ -1428,4 +1411,60 @@ main {
 .projectInfo_latestProject_chakraCard_link {
   width: 100%;
   word-break: break-word;
+}
+
+.timeline-section {
+  margin-left: 20px;
+  display: flex;
+}
+.timeline-node {
+  position: relative;
+  left: -50px;
+  justify-content: flex-start;
+}
+.timeline-node-outer {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 6px 8px 0 rgba(80, 80, 120, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline-node-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  // box-shadow: 0 0 0 4px #edeaff, 0 2px 8px 0 rgba(80, 80, 120, 0.1);
+}
+.timeline-line {
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  width: 1.5px;
+  height: 100%;
+  background: var(--gray-light);
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .timeline-section {
+    padding-left: 32px;
+  }
+  .timeline-node,
+  .timeline-node-outer {
+    width: 22px;
+    height: 22px;
+  }
+  .timeline-node-inner {
+    width: 10px;
+    height: 10px;
+  }
+  .timeline-line {
+    left: 9px;
+    top: 22px;
+    width: 2px;
+    height: calc(100% - 22px);
+  }
 }
