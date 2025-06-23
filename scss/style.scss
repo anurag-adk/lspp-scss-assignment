@@ -78,7 +78,6 @@ main {
   margin-top: 1.5rem;
   align-items: flex-start;
   width: 90%;
-  // Remove background, border, and padding from original
   background: none;
   border: none;
   padding: 0;
@@ -148,7 +147,6 @@ main {
   @extend .card;
   gap: 1.1rem;
   width: 90%;
-  // Remove background, border, and padding from original
   background: none;
   border: none;
   padding: 0;
@@ -186,7 +184,7 @@ main {
   color: #8a8a9e; // slightly dim color for headline
   font-family: var(--font-alt);
   font-weight: 500;
-  margin-bottom: 4px; // 4px gap below headline
+  margin-bottom: 4px;
   line-height: 1.2;
   letter-spacing: 0.01em;
 }
@@ -207,7 +205,6 @@ main {
   @extend .card;
   gap: 0.7rem;
   width: 90%;
-  // Remove background, border, and padding from original
   background: none;
   border: none;
   padding: 10px;
@@ -223,7 +220,7 @@ main {
 .personalInfo_socials_infoSection {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem; // change from 1.2rem to 0.7rem to match languages
+  gap: 0.7rem;
 }
 
 .personalInfo_socials_infoSection_instagramCard,
@@ -233,8 +230,7 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 0; // add same vertical padding as languages
-  // remove margin-bottom if present
+  padding: 0.5rem 0;
   margin-bottom: 0;
 }
 
@@ -300,7 +296,6 @@ main {
   @extend .card;
   gap: 0.7rem;
   width: 90%;
-  // Remove background, border, and padding from original
   background: none;
   border: none;
   padding: 10px;
@@ -419,7 +414,7 @@ main {
   }
 }
 
-/* Section titles */
+// Section Title
 .projectInfo_section-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -430,7 +425,7 @@ main {
   font-family: var(--font-main);
 }
 
-/* Latest Projects */
+// Latest Projects Styles
 .projectInfo_latestProject {
   background: none;
   box-shadow: none;
@@ -571,7 +566,7 @@ main {
   }
 }
 
-/* Experience Timeline */
+// Experience Styles
 .projectInfo_experience {
   margin-bottom: 2rem;
   display: flex;
@@ -787,7 +782,7 @@ main {
   }
 }
 
-/* Education */
+// Education Styles
 .projectInfo_education-list {
   display: flex;
   align-items: center;
@@ -1052,7 +1047,7 @@ main {
   }
 }
 
-/* Responsive adjustments */
+//Making responsive
 @media (max-width: 900px) {
   .projectInfo_latestProjects-list,
   .projectInfo_education-list,
@@ -1377,7 +1372,8 @@ main {
   }
 }
 
-/* Fix for custom cards in the HTML (e.g., .projectInfo_latestProject_figmaCard, etc.) */
+//Fix custom cards
+
 .projectInfo_latestProject_figmaCard,
 .projectInfo_latestProject_chakraCard {
   background: #f7f9fc;
@@ -1412,6 +1408,10 @@ main {
   width: 100%;
   word-break: break-word;
 }
+
+// Timeline Styles
+
+// This timeline section exhausted me so much the solution was so simple yet I was thinking my brains out over it. And the most elegant solution I found was to use flex. I tried to flex before but mistakely used it in timeline-node instead of timeline-section and it broke my code so I thought that was not the solution lol
 
 .timeline-section {
   margin-left: 20px;
