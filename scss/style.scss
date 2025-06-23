@@ -1,11 +1,9 @@
----SPLIT---
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
   --primary: #516cf7;
   --primary-light: #f7f9fc;
----SPLIT---
   --accent: #9251f7;
   --gray: #79819a;
   --gray-light: #e2e6ee;
@@ -24,11 +22,9 @@
 }
 
 body {
----SPLIT---
   font-family: var(--font-main);
   background: var(--gray-bg);
   color: var(--black);
----SPLIT---
   min-height: 100vh;
 }
 
@@ -45,7 +41,6 @@ main {
 .card {
   background: var(--white);
   border-radius: var(--border-radius);
----SPLIT---
   box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.06);
   padding: 1.5rem 1.5rem 1.2rem 1.5rem;
   width: 90%;
@@ -57,7 +52,6 @@ main {
 }
 
 .personalInfo {
----SPLIT---
   width: 340px;
   min-height: 100vh;
   background: #f7f6fb;
@@ -83,13 +77,11 @@ main {
   margin-top: 1.5rem;
   align-items: flex-start;
   width: 90%;
----SPLIT---
   // Remove background, border, and padding from original
   background: none;
   border: none;
   padding: 0;
 }
----SPLIT---
 
 .personalInfo_details_profession_name {
   font-size: 2.25rem;
@@ -200,7 +192,6 @@ main {
 .personalInfo_socials_title {
   font-size: 1rem;
   color: var(--gray);
----SPLIT---
   font-family: var(--font-alt);
   margin-bottom: 0.5rem;
 }
@@ -215,14 +206,12 @@ main {
 .personalInfo_socials_infoSection_dribbleCard,
 .personalInfo_socials_infoSection_twitterCard,
 .personalInfo_socials_infoSection_linkedInCard {
----SPLIT---
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0.5rem 0; // add same vertical padding as languages
   // remove margin-bottom if present
   margin-bottom: 0;
----SPLIT---
 }
 
 .personalInfo_socials_infoSection_instagramCard_motif,
@@ -249,7 +238,6 @@ main {
   object-fit: cover;
   border-radius: 50%;
   display: block;
----SPLIT---
 }
 
 .personalInfo_socials_infoSection_instagramCard_text,
@@ -268,7 +256,6 @@ main {
 .personalInfo_socials_infoSection_twitterCard_text_label,
 .personalInfo_socials_infoSection_linkedInCard_text_label {
   font-size: 1rem;
----SPLIT---
   color: var(--gray);
   font-family: var(--font-alt);
   font-weight: 500;
@@ -327,7 +314,6 @@ main {
   border-radius: 4px;
   background: none;
   background-size: contain;
----SPLIT---
   background-position: left center;
   background-repeat: no-repeat;
   display: flex;
@@ -348,7 +334,6 @@ main {
 }
 
 .personalInfo_languages_infoSection_italianCard_text,
----SPLIT---
 .personalInfo_languages_infoSection_greekCard_text,
 .personalInfo_languages_infoSection_englishCard_text,
 .personalInfo_languages_infoSection_spanishCard_text {
@@ -445,7 +430,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
----SPLIT---
   position: relative;
 }
 
@@ -507,7 +491,6 @@ main {
   background-image: url("../assets/logo/chakra-ui.png");
 }
 
----SPLIT---
 .projectInfo_latestProject_figmaCard_logoTitle_desc,
 .projectInfo_latestProject_chakraCard_logoTitle_desc {
   display: flex;
@@ -616,7 +599,6 @@ main {
   flex-direction: row;
   align-items: flex-start; // align to top
   // background: #f7f8fa;
----SPLIT---
   // border-radius: 16px;
   // border: 1.5px solid #e2e6ee;
   // box-shadow: none;
@@ -626,7 +608,6 @@ main {
   word-break: break-word;
   transition: box-shadow 0.2s, border 0.2s;
 }
----SPLIT---
 .projectInfo_experience_appleCard_left {
   display: flex;
   flex-direction: column;
@@ -636,10 +617,8 @@ main {
   min-width: 260px; // fixed width for left column for alignment
   max-width: 260px;
   // padding: 1.1rem 1.2rem 1.1rem 1.2rem;
----SPLIT---
   margin-bottom: 0;
   word-break: break-word;
----SPLIT---
   transition: box-shadow 0.2s, border 0.2s;
 }
 
@@ -650,7 +629,6 @@ main {
   align-items: flex-start;
   gap: 0.1rem;
   font-size: 0.92rem;
----SPLIT---
   color: #a0a4b8;
   font-family: var(--font-alt);
   margin-top: 0.1rem;
@@ -719,7 +697,6 @@ main {
   gap: 0.1rem;
   min-width: 0; // allow text to shrink
   width: 100%; // allow text to use available space
----SPLIT---
   white-space: nowrap; // prevent wrapping
 }
 
@@ -747,7 +724,6 @@ main {
   margin-left: 2.5rem; // add space so all contexts start at same point
   // line-height: 1.6;
   // max-width: 420px;
----SPLIT---
 }
 
 @media (max-width: 900px) {
@@ -783,7 +759,6 @@ main {
   }
   .projectInfo_experience_appleCard_context {
     max-width: 100%;
----SPLIT---
     margin-top: 0.2rem;
     margin-left: 0;
   }
@@ -818,16 +793,13 @@ main {
 .projectInfo_education-card-logo {
   width: 32px;
   height: 32px;
----SPLIT---
   border-radius: 8px;
   background-size: cover;
----SPLIT---
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .projectInfo_education-card-logo.memorisely {
----SPLIT---
   background-image: url("../assets/logo/memorisely.png");
 }
 .projectInfo_education-card-logo.uxacademy {
@@ -871,7 +843,6 @@ main {
 }
 
 .projectInfo_skills-row {
----SPLIT---
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
@@ -983,7 +954,6 @@ main {
   color: var(--gray);
   font-family: var(--font-alt);
   text-align: center;
----SPLIT---
   width: 100%; // allow text to use full width
   word-break: break-word;
 }
@@ -1012,7 +982,6 @@ main {
 .projectInfo_education {
   width: 95%;
   display: flex;
----SPLIT---
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -1090,7 +1059,6 @@ main {
 
 .projectInfo_education_memoriselyCard_courseDate {
   font-size: 12.12px;
----SPLIT---
   color: #79819a;
   font-weight: 400;
   text-align: center;
@@ -1109,7 +1077,6 @@ main {
   border-radius: 0.25rem;
   margin-right: 1.5rem;
 }
----SPLIT---
 
 .projectInfo_education_courseraCard_logoTitle_mainLogo {
   width: 15%;
@@ -1192,7 +1159,6 @@ main {
 
 .projectInfo_skills_designCard_tags {
   width: 65%;
----SPLIT---
   height: 55vh;
   display: flex;
   flex-direction: row;
@@ -1201,7 +1167,6 @@ main {
   flex-wrap: wrap;
   margin-top: 1rem;
   background-color: transparent;
----SPLIT---
 }
 
 .projectInfo_skills_designCard_tags_designing_card {
@@ -1214,7 +1179,6 @@ main {
   align-items: center;
   font-size: 14.14px;
   color: #9251f7;
----SPLIT---
   font-weight: 500;
   text-align: center;
   font-family: "DM Sans", sans-serif;
@@ -1245,3 +1209,279 @@ main {
   text-align: center;
   font-family: "DM Sans", sans-serif;
   text-align: start;
+}
+
+.projectInfo_tools {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.projectInfo_tools_card {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card {
+    width: 80%;
+  }
+}
+
+.projectInfo_tools_card_figma {
+  width: 45%;
+  height: 22vh;
+  border-radius: 0.25rem;
+  background-color: #f7f9fc;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma {
+    width: 26%;
+    height: 28vh;
+  }
+}
+
+.projectInfo_tools_card_figma_mainLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/figma.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_mainLogo {
+    width: 30%;
+  }
+}
+
+.projectInfo_tools_card_figma_title {
+  font-size: 14.14px;
+  color: #2e2e48;
+  font-weight: 500;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.projectInfo_tools_card_figma_desc {
+  font-size: 10.1px;
+  color: #79819a;
+  font-weight: 400;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.projectInfo_tools_card_figma_mazeLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/maze.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 55%;
+  height: 6vh;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_mazeLogo {
+    width: 42%;
+    height: 6.5vh;
+  }
+}
+
+.projectInfo_tools_card_figma_splineLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/spline.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 6.5vh;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_splineLogo {
+    width: 32%;
+    height: 9.5vh;
+  }
+}
+
+.projectInfo_tools_card_figma_vectornatorLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/vectornator.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  border-radius: 0.5rem;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_vectornatorLogo {
+    width: 30%;
+  }
+}
+
+.projectInfo_tools_card_figma_rotatoLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/rotato.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 41%;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_rotatoLogo {
+    width: 31.9%;
+    height: 9.78vh;
+  }
+}
+
+.projectInfo_tools_card_figma_zeplinLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/zeplin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 52%;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_zeplinLogo {
+    width: 38%;
+  }
+}
+
+.projectInfo_tools_card_figma_vsCodeLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/vs-code.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_vsCodeLogo {
+    width: 30%;
+  }
+}
+
+.projectInfo_tools_card_figma_xcodeLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/x-code.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+@media (min-width: 1024px) {
+  .projectInfo_tools_card_figma_xcodeLogo {
+    width: 30%;
+  }
+}
+
+.projectInfo_tools_card_figma_notionLogo {
+  width: 28%;
+  height: 9vh;
+  background-image: url("../assets/logo/notion.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 34%;
+  height: 35%;
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .personalInfo {
+    width: 35%;
+    background-color: #f5f5f5;
+  }
+}
+.personalInfo_details_profession {
+  overflow-y: auto;
+}
+.personalInfo_details_profession_name {
+  overflow-y: auto;
+}
+.personalInfo_details_profession_position {
+  overflow-y: auto;
+}
+.personalInfo_details_quote {
+  overflow-y: auto;
+}
+.personalInfo_details_quote_text {
+  overflow-y: auto;
+}
+.personalInfo_details_quote_author {
+  overflow-y: auto;
+}
+.personalInfo_contact {
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Fix for custom cards in the HTML (e.g., .projectInfo_latestProject_figmaCard, etc.) */
+.projectInfo_latestProject_figmaCard,
+.projectInfo_latestProject_chakraCard {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 220px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  word-break: break-word;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc,
+.projectInfo_latestProject_chakraCard_logoTitle_desc {
+  width: 100%;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc_title,
+.projectInfo_latestProject_figmaCard_logoTitle_desc_context,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_title,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_context,
+.projectInfo_latestProject_figmaCard_link,
+.projectInfo_latestProject_chakraCard_link {
+  width: 100%;
+  word-break: break-word;
+}
+.projectInfo_latestProject_figmaCard_link,
+.projectInfo_latestProject_chakraCard_link {
+  width: 100%;
+  word-break: break-word;
+}
