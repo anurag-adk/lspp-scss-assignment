@@ -1192,3 +1192,12 @@ main {
 
 .projectInfo_skills_designCard_tags {
   width: 65%;
+---SPLIT---
+  height: 55vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  background-color: transparent;
