@@ -443,19 +443,16 @@ main {
 .projectInfo_latestProject_figmaCard,
 .projectInfo_latestProject_chakraCard {
   background: #f7f9fc;
-  border-radius: 16px;
-  border: 1.5px solid #e2e6ee;
-  box-shadow: none;
-  padding: 1rem 1rem 0.8rem 1rem; // reduce padding
-  min-width: 0;
-  flex: 1 1 320px;
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 220px;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem; // reduce gap between elements
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
   word-break: break-word;
-  transition: box-shadow 0.2s, border 0.2s;
-  margin-bottom: 0;
 }
 
 .projectInfo_latestProject_figmaCard.selected,
@@ -1120,16 +1117,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
   margin-top: 2rem;
-}
-
-.projectInfo_skills_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .projectInfo_skills_title_text {
@@ -1141,31 +1131,34 @@ main {
 }
 
 .projectInfo_skills_designCard {
-  width: 95%;
-  height: auto;
-  margin-left: 2rem;
   background-color: transparent;
-  margin-bottom: 2rem;
   display: flex;
-  justify-content: space-around;
-  align-items: start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   margin-top: 1rem;
   border-radius: 1rem;
+  margin-left: 0;
 }
 
 .projectInfo_skills_designCard_icon {
-  width: 30%;
-  height: 25vh;
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  height: 100%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; // align left
+  align-self: stretch;
+  margin-left: 0;
+  margin-right: 2rem; // space between icon/text and tags
 }
 
 .projectInfo_skills_designCard_icon_motiff {
-  height: 7.25vh;
-  width: 55%;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background-color: #efe2f9;
   display: flex;
@@ -1173,67 +1166,49 @@ main {
   align-items: center;
 }
 
-.projectInfo_skills_designCard_icon_title {
-  margin-top: 1rem;
-  font-size: 16.16px;
-  color: #2e2e48;
-  font-weight: 500;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-}
-
 .projectInfo_skills_designCard_tags {
-  width: 65%;
-  height: 55vh;
+  flex: 1;
+  width: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
-  margin-top: 1rem;
-  background-color: transparent;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0;
 }
 
 .projectInfo_skills_designCard_tags_designing_card {
-  width: 45%;
-  height: 6vh;
-  border-radius: 0.25rem;
+  flex: 1 1 120px;
+  max-width: 200px;
+  height: 5rem;
+  padding: 0.5rem 1rem;
   background-color: #f3e8ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0.25rem;
+  text-align: left; // align text to left
+
   font-size: 14.14px;
   color: #9251f7;
   font-weight: 500;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; // vertical middle
+  justify-content: flex-start; // horizontal left
 }
 
 .projectInfo_skills_developmentCard_tags_designing_card {
-  width: 45%;
-  height: 6vh;
-  border-radius: 0.25rem;
+  flex: 1 1 120px;
+  max-width: 200px;
+  height: 5rem;
+  padding: 0.5rem 1rem;
   background-color: #f1f4ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0.25rem;
+  text-align: left; // align text to left
+
   font-size: 14.14px;
   color: #516cf7;
   font-weight: 500;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  margin-bottom: 1rem;
-}
-
-.projectInfo_skills_developmentCard_icon_title {
-  margin-top: 1rem;
-  font-size: 14.14px;
-  color: #2e2e48;
-  font-weight: 500;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  text-align: start;
+  display: flex;
+  align-items: center; // vertical middle
+  justify-content: flex-start; // horizontal left
 }
 
 .projectInfo_tools {
