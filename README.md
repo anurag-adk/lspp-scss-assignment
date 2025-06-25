@@ -4,6 +4,10 @@
 
 This project is a responsive portfolio website cloned from a Figma design. The goal is to faithfully reproduce the Figma layout using only semantic HTML and SCSS, while ensuring the site is fully responsive for both desktop and mobile devices. The project demonstrates best practices in modern web development, including BEM naming conventions and a clean, maintainable file structure.
 
+## 🌐 Deployed At
+
+The live site is available at: [https://anurag-adk.github.io/lspp-scss-assignment/](https://anurag-adk.github.io/lspp-scss-assignment/)
+
 ## 🔧 Tech Stack
 
 - **HTML5** (semantic markup)
@@ -22,14 +26,11 @@ This project is a responsive portfolio website cloned from a Figma design. The g
 
 <pre>📁 lspp-scss-assignment/
 ├── 📁 assets/
-│   └── 📁 icon/
-│   └── 📁 language/
-│   └── 📁 logo/
-│   └── 📁 social/
-│   └── user-profile.jpg     
+├── 📁 css/
+│   └── style.css
+│   └── style.css.map
 ├── 📁 scss/
 │   └── style.scss
-├── .gitignore
 ├── index.html  
 └── README.md  
 </pre>
