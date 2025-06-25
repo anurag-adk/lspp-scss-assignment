@@ -1,0 +1,1453 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+:root {
+  --primary: #516cf7;
+  --primary-light: #f7f9fc;
+  --accent: #9251f7;
+  --gray: #79819a;
+  --gray-light: #e2e6ee;
+  --gray-bg: #ffffff;
+  --black: #2e2e48;
+  --white: #fff;
+  --border-radius: 12px;
+  --font-main: "Outfit", sans-serif;
+  --font-alt: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--gray-bg);
+  color: var(--black);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--gray-bg);
+}
+
+.card, .personalInfo_languages, .personalInfo_socials, .personalInfo_contact, .personalInfo_details {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.06);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  width: 90%;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.personalInfo {
+  width: 52vh;
+  min-height: 100vh;
+  background: #f7f6fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 0;
+  position: relative;
+}
+
+.personalInfo_profilePic {
+  width: 100%;
+  height: 220px;
+  background-image: url("/assets/user-profile.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.personalInfo_details {
+  margin-top: 1.5rem;
+  align-items: flex-start;
+  width: 90%;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.personalInfo_details_profession {
+  overflow-y: auto;
+}
+
+.personalInfo_details_profession_name {
+  overflow-y: auto;
+}
+
+.personalInfo_details_profession_position {
+  overflow-y: auto;
+}
+
+.personalInfo_details_quote {
+  overflow-y: auto;
+}
+
+.personalInfo_details_quote_text {
+  overflow-y: auto;
+}
+
+.personalInfo_details_quote_author {
+  overflow-y: auto;
+}
+
+.personalInfo_contact {
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.personalInfo_details_profession_name {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-main);
+}
+
+.personalInfo_details_profession_position {
+  font-size: 1.75rem;
+  font-weight: 300;
+  background: linear-gradient(90deg, #a478e8 0%, #516cf7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-main);
+}
+
+.personalInfo_details_quote {
+  font-size: 1.05rem;
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-alt);
+  border-left: 3px solid var(--primary);
+  padding-left: 1rem;
+}
+
+.personalInfo_details_quote_author {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-style: normal;
+  margin-top: 0.25rem;
+  font-family: var(--font-alt);
+}
+
+.personalInfo_contact {
+  gap: 1.1rem;
+  width: 90%;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.personalInfo_contact_emailCard,
+.personalInfo_contact_websiteCard,
+.personalInfo_contact_phoneCard,
+.personalInfo_contact_addressCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.personalInfo_contact_emailCard_motif,
+.personalInfo_contact_websiteCard_motif,
+.personalInfo_contact_phoneCard_motif,
+.personalInfo_contact_addressCard_motif {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ececf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: #6e6e7e;
+}
+
+.personalInfo_contact_emailCard_text_label,
+.personalInfo_contact_websiteCard_text_label,
+.personalInfo_contact_phoneCard_text_label,
+.personalInfo_contact_addressCard_text_label {
+  font-size: 0.97rem;
+  color: #8a8a9e;
+  font-family: var(--font-alt);
+  font-weight: 500;
+  margin-bottom: 4px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.personalInfo_contact_emailCard_text_value,
+.personalInfo_contact_websiteCard_text_value,
+.personalInfo_contact_phoneCard_text_value,
+.personalInfo_contact_addressCard_text_value {
+  font-size: 1rem;
+  color: #22223b;
+  font-family: var(--font-alt);
+  font-weight: 500;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.personalInfo_socials {
+  gap: 0.7rem;
+  width: 90%;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.personalInfo_socials_title {
+  font-size: 1rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  margin-bottom: 0.5rem;
+}
+
+.personalInfo_socials_infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.personalInfo_socials_infoSection_instagramCard,
+.personalInfo_socials_infoSection_dribbleCard,
+.personalInfo_socials_infoSection_twitterCard,
+.personalInfo_socials_infoSection_linkedInCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+}
+
+.personalInfo_socials_infoSection_instagramCard_motif,
+.personalInfo_socials_infoSection_dribbleCard_motif,
+.personalInfo_socials_infoSection_twitterCard_motif,
+.personalInfo_socials_infoSection_linkedInCard_motif {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.personalInfo_socials_infoSection_instagramCard_motif img,
+.personalInfo_socials_infoSection_dribbleCard_motif img,
+.personalInfo_socials_infoSection_twitterCard_motif img,
+.personalInfo_socials_infoSection_linkedInCard_motif img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.personalInfo_socials_infoSection_instagramCard_text,
+.personalInfo_socials_infoSection_dribbleCard_text,
+.personalInfo_socials_infoSection_twitterCard_text,
+.personalInfo_socials_infoSection_linkedInCard_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.personalInfo_socials_infoSection_instagramCard_text_label,
+.personalInfo_socials_infoSection_dribbleCard_text_label,
+.personalInfo_socials_infoSection_twitterCard_text_label,
+.personalInfo_socials_infoSection_linkedInCard_text_label {
+  font-size: 1rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.personalInfo_socials_infoSection_instagramCard_text_value,
+.personalInfo_socials_infoSection_dribbleCard_text_value,
+.personalInfo_socials_infoSection_twitterCard_text_value,
+.personalInfo_socials_infoSection_linkedInCard_text_value {
+  font-size: 1.1rem;
+  color: var(--black);
+  font-family: var(--font-alt);
+  font-weight: 500;
+}
+
+.personalInfo_languages {
+  gap: 0.7rem;
+  width: 90%;
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.personalInfo_languages_title {
+  font-size: 1rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  margin-bottom: 0.5rem;
+}
+
+.personalInfo_languages_infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.personalInfo_languages_infoSection_italianCard,
+.personalInfo_languages_infoSection_greekCard,
+.personalInfo_languages_infoSection_englishCard,
+.personalInfo_languages_infoSection_spanishCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.personalInfo_languages_infoSection_italianCard_motif,
+.personalInfo_languages_infoSection_greekCard_motif,
+.personalInfo_languages_infoSection_englishCard_motif,
+.personalInfo_languages_infoSection_spanishCard_motif {
+  width: 32px;
+  height: 22px;
+  border-radius: 4px;
+  background: none;
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.personalInfo_languages_infoSection_italianCard_motif img,
+.personalInfo_languages_infoSection_greekCard_motif img,
+.personalInfo_languages_infoSection_englishCard_motif img,
+.personalInfo_languages_infoSection_spanishCard_motif img {
+  width: 32px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.personalInfo_languages_infoSection_italianCard_text,
+.personalInfo_languages_infoSection_greekCard_text,
+.personalInfo_languages_infoSection_englishCard_text,
+.personalInfo_languages_infoSection_spanishCard_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.personalInfo_languages_infoSection_italianCard_text_label,
+.personalInfo_languages_infoSection_greekCard_text_label,
+.personalInfo_languages_infoSection_englishCard_text_label,
+.personalInfo_languages_infoSection_spanishCard_text_label {
+  font-size: 1rem;
+  color: var(--black);
+  font-family: var(--font-alt);
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.personalInfo_languages_infoSection_italianCard_text_value,
+.personalInfo_languages_infoSection_greekCard_text_value,
+.personalInfo_languages_infoSection_englishCard_text_value,
+.personalInfo_languages_infoSection_spanishCard_text_value {
+  font-size: 0.95rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  .personalInfo {
+    width: 100%;
+    min-height: unset;
+  }
+}
+.projectInfo {
+  flex: 1;
+  padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  background: var(--gray-bg);
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  .projectInfo {
+    padding: 2rem 1rem;
+  }
+}
+.projectInfo_section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-left: 0px;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-main);
+}
+
+.projectInfo_latestProject {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.projectInfo_latestProjects-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin-left: 0;
+}
+
+.projectInfo_latestProject_figmaCard,
+.projectInfo_latestProject_chakraCard {
+  background: #f7f9fc;
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 220px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  word-break: break-word;
+}
+
+.projectInfo_latestProject_figmaCard.selected,
+.projectInfo_latestProject_chakraCard.selected {
+  border: 2px solid #22223b;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.06);
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle,
+.projectInfo_latestProject_chakraCard_logoTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_mainLogo,
+.projectInfo_latestProject_chakraCard_logoTitle_mainLogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_mainLogo {
+  background-image: url("../assets/logo/figma.png");
+}
+
+.projectInfo_latestProject_chakraCard_logoTitle_mainLogo {
+  background-image: url("../assets/logo/chakra-ui.png");
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc,
+.projectInfo_latestProject_chakraCard_logoTitle_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc_title,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-alt);
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc_context,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_context {
+  font-size: 1rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  margin-bottom: 0.2rem;
+}
+
+.projectInfo_latestProject_figmaCard_link,
+.projectInfo_latestProject_chakraCard_link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #516cf7;
+  font-family: var(--font-alt);
+  font-weight: 700;
+  margin-top: 0.5rem;
+  width: 100%;
+  word-break: break-word;
+}
+
+.projectInfo_latestProject_figmaCard_link::before,
+.projectInfo_latestProject_chakraCard_link::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/icon/link.svg");
+  background-size: 20px 20px;
+  border-radius: 50%;
+  background-color: #e7eafd;
+  margin-right: 0.3rem;
+}
+
+.projectInfo_latestProject_figmaCard_link::before {
+  background-image: url("../assets/icon/figma-outline.svg");
+}
+
+.projectInfo_latestProject_chakraCard_link::before {
+  background-image: url("../assets/icon/link.svg");
+}
+
+@media (max-width: 900px) {
+  .projectInfo_latestProjects-list {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .projectInfo_latestProject_figmaCard,
+  .projectInfo_latestProject_chakraCard {
+    flex: unset;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+}
+.projectInfo_experience {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.projectInfo_experience_title {
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo_experience_title_text,
+.projectInfo_section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-main);
+  margin-bottom: 0.7rem;
+}
+
+.projectInfo_experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-left: 0;
+}
+
+.projectInfo_experience_appleCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.1rem 1.2rem 1.1rem 1.2rem;
+  gap: 1.2rem;
+  margin-bottom: 0;
+  word-break: break-word;
+  transition: box-shadow 0.2s, border 0.2s;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.projectInfo_experience_appleCard::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 24px;
+  width: 8px;
+  height: 8px;
+  background: var(--black);
+  border-radius: 50%;
+  box-shadow: 0 1px 4px 0 rgba(80, 80, 120, 0.1);
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .projectInfo_experience_appleCard {
+    margin-left: 0.5rem;
+  }
+  .projectInfo_experience_appleCard::before {
+    left: -8px;
+    top: 18px;
+  }
+}
+.projectInfo_experience_appleCard_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  min-width: 260px;
+  max-width: 260px;
+  margin-bottom: 0;
+  word-break: break-word;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.projectInfo_experience_appleCard_dateLocation {
+  min-width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.1rem;
+  font-size: 0.92rem;
+  color: var(--black);
+  font-family: var(--font-alt);
+  margin-top: 0.1rem;
+}
+
+.projectInfo_experience_appleCard_dateLocation_duration {
+  color: var(--black);
+  font-family: var(--font-alt);
+  font-weight: 300;
+}
+
+.projectInfo_experience_appleCard_dateLocation_location {
+  color: #a0a4b8;
+  font-family: var(--font-alt);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.projectInfo_experience_appleCard_dateLocation i {
+  font-size: 0.82rem;
+  color: #a0a4b8 !important;
+  margin-right: 0.5rem !important;
+}
+
+.projectInfo_experience_appleCard_logoDesc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  margin-top: 0.1rem;
+}
+
+.projectInfo_experience_appleCard_logoDesc_mainLogo,
+.projectInfo_experience_teslaCard_logoDesc_mainLogo,
+.projectInfo_experience_googleCard_logoDesc_mainLogo,
+.projectInfo_experience_vectornatorCard_logoDesc_mainLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.projectInfo_experience_appleCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/apple.png");
+}
+
+.projectInfo_experience_teslaCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/tesla.png");
+}
+
+.projectInfo_experience_googleCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/google.png");
+}
+
+.projectInfo_experience_vectornatorCard_logoDesc_mainLogo {
+  background-image: url("../assets/logo/vectornator.png");
+}
+
+.projectInfo_experience_appleCard_logoDesc_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+  width: 100%;
+  white-space: normal;
+}
+
+.projectInfo_experience_appleCard_logoDesc_desc_title {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 0.02rem;
+  color: #79819a;
+  font-family: var(--font-main);
+}
+
+.projectInfo_experience_appleCard_logoDesc_desc_context {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2e2e48;
+  font-family: var(--font-main);
+}
+
+.projectInfo_experience_appleCard_context {
+  font-size: 0.95rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  text-align: left;
+  margin-top: 0.2rem;
+  flex: 1;
+  margin-left: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .projectInfo_experience-list {
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .projectInfo_experience_appleCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    gap: 0.7rem;
+    min-width: 0;
+    width: 100%;
+    gap: 0.7rem;
+  }
+  .projectInfo_experience_appleCard_dateLocation {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0;
+  }
+  .projectInfo_experience_appleCard_logoDesc {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 0.7rem;
+  }
+  .projectInfo_experience_appleCard_context {
+    max-width: 100%;
+    margin-top: 0.2rem;
+    margin-left: 0;
+  }
+}
+.projectInfo_education-list {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: 0;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .projectInfo_education-list {
+    margin-left: 0;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .projectInfo_education-list {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+    max-width: 100vw;
+    overflow-x: visible;
+  }
+}
+.projectInfo_education-card {
+  margin-top: 1rem;
+  background: #f7f9fc;
+  border-radius: var(--border-radius);
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  min-width: 220px;
+  max-width: 300px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 3px 12px 0 rgba(80, 80, 120, 0.05);
+  box-sizing: border-box;
+}
+
+.projectInfo_education-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.projectInfo_education-card-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.projectInfo_education-card-logo.memorisely {
+  background-image: url("../assets/logo/memorisely.png");
+}
+
+.projectInfo_education-card-logo.uxacademy {
+  background-image: url("../assets/logo/ux-academy.png");
+}
+
+.projectInfo_education-card-logo.coursera {
+  background-image: url("../assets/logo/coursera.png");
+}
+
+.projectInfo_education-card-title {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+}
+
+.projectInfo_education-card-course {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black);
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+}
+
+.projectInfo_education-card-date {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .projectInfo_education-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-top: 0.7rem;
+    box-sizing: border-box;
+  }
+  .projectInfo_education-card-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+/* Skills */
+.projectInfo_skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 48px;
+}
+
+.projectInfo_skills-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.projectInfo_skills-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: var(--font-main);
+  margin-top: 0.2rem;
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectInfo_skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.projectInfo_skills-tag {
+  background: #f3e8ff;
+  color: var(--accent);
+  font-size: 1rem;
+  font-family: var(--font-alt);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+}
+
+.projectInfo_skills-tag.dev {
+  background: #f1f4ff;
+  color: var(--primary);
+}
+
+/* Tools */
+.projectInfo_tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-left: 48px;
+}
+
+.projectInfo_tools-card {
+  background: #f7f9fc;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  padding: 1rem 1rem 0.8rem 1rem;
+  min-width: 120px;
+  max-width: 220px;
+  flex: 1 1 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+  word-break: break-word;
+  height: auto;
+}
+
+.projectInfo_tools-card-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  flex-shrink: 0;
+  margin-bottom: 0.4rem;
+}
+
+.projectInfo_tools-card-logo.figma {
+  background-image: url("../assets/logo/figma.png");
+}
+
+.projectInfo_tools-card-logo.maze {
+  background-image: url("../assets/logo/maze.png");
+}
+
+.projectInfo_tools-card-logo.spline {
+  background-image: url("../assets/logo/spline.png");
+}
+
+.projectInfo_tools-card-logo.vectornator {
+  background-image: url("../assets/logo/vectornator.png");
+}
+
+.projectInfo_tools-card-logo.rotato {
+  background-image: url("../assets/logo/rotato.png");
+}
+
+.projectInfo_tools-card-logo.zeplin {
+  background-image: url("../assets/logo/zeplin.png");
+}
+
+.projectInfo_tools-card-logo.vscode {
+  background-image: url("../assets/logo/vs-code.png");
+}
+
+.projectInfo_tools-card-logo.xcode {
+  background-image: url("../assets/logo/x-code.png");
+}
+
+.projectInfo_tools-card-logo.notion {
+  background-image: url("../assets/logo/notion.png");
+}
+
+.projectInfo_tools-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+
+.projectInfo_tools-card-desc {
+  font-size: 0.75rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .projectInfo_tools-card {
+    height: auto;
+    margin: 0.4rem 0;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
+  }
+  .projectInfo_tools-card-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .projectInfo_latestProjects-list,
+  .projectInfo_education-list,
+  .projectInfo_tools-list {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .projectInfo_skills-list,
+  .projectInfo_experience-list {
+    margin-left: 0;
+  }
+  .projectInfo_section-title {
+    margin-left: 0;
+  }
+  .projectInfo::before {
+    left: 0;
+  }
+}
+.projectInfo_education {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.projectInfo_education_title_text {
+  font-size: 24.24px;
+  color: #2e2e48;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.projectInfo_education_memoriselyCard {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  width: 90%;
+  height: 28vh;
+  border-radius: 4%;
+  background-color: #f7f9fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 0.75rem;
+}
+
+.projectInfo_education_memoriselyCard_logoTitle {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.projectInfo_education_memoriselyCard_logoTitle_mainLogo {
+  width: 15%;
+  height: 9.5vh;
+  background-image: url("../assets/logo/memorisely.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 7.5vh;
+  margin-right: 1.5rem;
+}
+
+.projectInfo_education_memoriselyCard_logoTitle_title {
+  font-size: 14.14px;
+  color: #2e2e48;
+  font-weight: 500;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.projectInfo_education_memoriselyCard_courseName {
+  font-size: 14.14px;
+  color: #2e2e48;
+  font-weight: 500;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.projectInfo_education_memoriselyCard_courseDate {
+  font-size: 12.12px;
+  color: #79819a;
+  font-weight: 400;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+
+.projectInfo_education_uxacademyCard_logoTitle_mainLogo {
+  width: 15%;
+  height: 9.5vh;
+  background-image: url("../assets/logo/ux-academy.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 7.5vh;
+  border-radius: 0.25rem;
+  margin-right: 1.5rem;
+}
+
+.projectInfo_education_courseraCard_logoTitle_mainLogo {
+  width: 15%;
+  height: 9.5vh;
+  background-image: url("../assets/logo/coursera.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 7.5vh;
+  margin-right: 1.5rem;
+}
+
+.projectInfo_skills {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.projectInfo_skills_title_text {
+  font-size: 24.24px;
+  color: #2e2e48;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.projectInfo_skills_designCard {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 1.2rem;
+  border-radius: 1rem;
+  margin-left: 1.2rem;
+}
+
+.projectInfo_skills_designCard_icon {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.projectInfo_skills_designCard_icon_motiff {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #efe2f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectInfo_skills_designCard_tags {
+  flex: 1;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 0;
+}
+
+.projectInfo_skills_designCard_tags_designing_card {
+  flex: 1 1 120px;
+  max-width: 200px;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f3e8ff;
+  border-radius: 0.25rem;
+  text-align: left;
+  font-size: 14.14px;
+  color: #9251f7;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.projectInfo_skills_developmentCard_tags_designing_card {
+  flex: 1 1 120px;
+  min-width: 100px;
+  max-width: 200px;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f1f4ff;
+  border-radius: 0.25rem;
+  text-align: left;
+  font-size: 14.14px;
+  color: #516cf7;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.projectInfo_tools {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projectInfo_tools_card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.projectInfo_tools_card_figma {
+  background: #f7f9fc;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  padding: 1rem 1rem 0.8rem 1rem;
+  min-width: 170px;
+  max-width: 220px;
+  flex: 1 1 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin: 0.5rem;
+  word-break: break-word;
+  height: auto;
+}
+
+.projectInfo_tools_card_figma_mainLogo,
+.projectInfo_tools_card_figma_mazeLogo,
+.projectInfo_tools_card_figma_splineLogo,
+.projectInfo_tools_card_figma_vectornatorLogo,
+.projectInfo_tools_card_figma_rotatoLogo,
+.projectInfo_tools_card_figma_zeplinLogo,
+.projectInfo_tools_card_figma_vsCodeLogo,
+.projectInfo_tools_card_figma_xcodeLogo,
+.projectInfo_tools_card_figma_notionLogo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  flex-shrink: 0;
+  margin-bottom: 0.4rem;
+}
+
+.projectInfo_tools_card_figma_title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2e2e48;
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+  margin-bottom: 0.1rem;
+  text-align: left;
+}
+
+.projectInfo_tools_card_figma_desc {
+  font-size: 0.95rem;
+  color: #79819a;
+  font-family: var(--font-alt);
+  width: 100%;
+  word-break: break-word;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .projectInfo_tools_card_figma {
+    flex: unset;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0.4rem 0;
+    padding: 0.8rem 0.7rem 0.7rem 0.7rem;
+  }
+  .projectInfo_tools_card_figma_mainLogo,
+  .projectInfo_tools_card_figma_mazeLogo,
+  .projectInfo_tools_card_figma_splineLogo,
+  .projectInfo_tools_card_figma_vectornatorLogo,
+  .projectInfo_tools_card_figma_rotatoLogo,
+  .projectInfo_tools_card_figma_zeplinLogo,
+  .projectInfo_tools_card_figma_vsCodeLogo,
+  .projectInfo_tools_card_figma_xcodeLogo,
+  .projectInfo_tools_card_figma_notionLogo {
+    width: 40px;
+    height: 40px;
+  }
+}
+.projectInfo_latestProject_figmaCard,
+.projectInfo_latestProject_chakraCard {
+  background: #f7f9fc;
+  border-radius: var(--border-radius);
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  min-width: 220px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.03);
+  word-break: break-word;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc,
+.projectInfo_latestProject_chakraCard_logoTitle_desc {
+  width: 100%;
+}
+
+.projectInfo_latestProject_figmaCard_logoTitle_desc_title,
+.projectInfo_latestProject_figmaCard_logoTitle_desc_context,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_title,
+.projectInfo_latestProject_chakraCard_logoTitle_desc_context,
+.projectInfo_latestProject_figmaCard_link,
+.projectInfo_latestProject_chakraCard_link {
+  width: 100%;
+  word-break: break-word;
+}
+
+.projectInfo_latestProject_figmaCard_link,
+.projectInfo_latestProject_chakraCard_link {
+  width: 100%;
+  word-break: break-word;
+}
+
+.timeline-section {
+  margin-left: 20px;
+  display: flex;
+}
+
+.timeline-node {
+  position: relative;
+  left: -50px;
+  justify-content: flex-start;
+}
+
+.timeline-node-outer {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 6px 8px 0 rgba(80, 80, 120, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-node-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.timeline-line {
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  width: 1.5px;
+  height: 100%;
+  background: var(--gray-light);
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .timeline-section {
+    margin-left: 20px;
+    display: flex;
+  }
+  .timeline-node {
+    left: -20px;
+  }
+  .timeline-node-outer {
+    width: 22px;
+    height: 22px;
+  }
+  .timeline-node-inner {
+    width: 6px;
+    height: 6px;
+  }
+  .timeline-line {
+    left: 11px;
+    top: 22px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
